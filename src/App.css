@@ -13,9 +13,9 @@ html {
   font-family: "urbanist";
 }
 
-/* body {
+body {
   background-color: black;
-} */
+}
 
 h1,
 h2,
@@ -610,4 +610,11 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.img-country{
+  border: 2px solid red;
+    height: 50vh;
+    width: 29vw;
 }

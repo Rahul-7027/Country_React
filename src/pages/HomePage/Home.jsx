@@ -1,5 +1,6 @@
 import React from 'react'
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { HeroSection } from '../../layout/UI/HeroSectio';
 // import { GiHamburgerMenu } from "react-icons/gi";
 
 const Home = () => {
@@ -9,24 +10,24 @@ const Home = () => {
                 <div className="container">
                     <div className="grid navbar-grid">
                         <div className="Logo">
-                            <a href="/">
+                            <NavLink to="/">
                                 <h1>WorldAtlas</h1>
-                            </a>
+                            </NavLink>
                         </div>
 
                         <nav>
                             <ul>
                                 <li>
-                                    <a to="/">Home</a>
+                                    <NavLink to="/">Home</NavLink>
                                 </li>
                                 <li>
-                                    <a to="/about">About</a>
+                                    <NavLink to="/about">About</NavLink>
                                 </li>
                                 <li>
-                                    <a to="/country">Country</a>
+                                    <NavLink to="/country">Country</NavLink>
                                 </li>
                                 <li>
-                                    <a to="/contact">Contact</a>
+                                    <NavLink to="/contact">Contact</NavLink>
                                 </li>
                             </ul>
                         </nav>
@@ -39,7 +40,7 @@ const Home = () => {
                     </div>
                 </div>
             </header>
-
+            
         </div>
     )
 }

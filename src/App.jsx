@@ -1,11 +1,13 @@
 import './App.css'
-import About from "./pages/AboutPage/About"
+import About from "./pages/AboutPage.jsx/About"
 import Contact from "./pages/ContactPage/Contact"
 import Country from "./pages/CountryPage/Country"
 import Home from "./pages/HomePage/Home"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Applayout from './layout/Applayout'
 import Error from './pages/ErrorPage/Error'
+import { HeroSection } from './layout/UI/HeroSectio'
+import CountryDetails from './layout/CountryDetails'
 
 function App() {
 
@@ -13,11 +15,12 @@ function App() {
     {
       path: "/",
       element: <Applayout />,
-      errorElement:<Error/>,
+      errorElement: <Error />,
       children: [
+
         {
           path: "/",
-          element: <Home/>
+          element: <HeroSection />
         },
         {
           path: "/about",
@@ -30,6 +33,10 @@ function App() {
         {
           path: "/country",
           element: <Country />
+        },
+        {
+          path: "/country/:id",
+          element: <CountryDetails />
         }
       ]
     }

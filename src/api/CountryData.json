@@ -1,0 +1,163 @@
+[
+    {
+      "id": 1,
+      "countryName": "Afghanistan",
+      "capital": "Kabul",
+      "population": "40 million",
+      "interestingFact": "Afghanistan is known for its mountainous terrain and rich cultural history.",
+      "image": "https://example.com/afghanistan.jpg"
+    },
+    {
+      "id": 2,
+      "countryName": "Albania",
+      "capital": "Tirana",
+      "population": "2.8 million",
+      "interestingFact": "Albania has a stunning coastline along the Adriatic and Ionian Seas.",
+      "image": "https://example.com/albania.jpg"
+    },
+    {
+      "id": 3,
+      "countryName": "Algeria",
+      "capital": "Algiers",
+      "population": "44 million",
+      "interestingFact": "Algeria is the largest country in Africa by land area.",
+      "image": "https://example.com/algeria.jpg"
+    },
+    {
+      "id": 4,
+      "countryName": "Andorra",
+      "capital": "Andorra la Vella",
+      "population": "77,000",
+      "interestingFact": "Andorra is a small country located in the Pyrenees mountains between France and Spain.",
+      "image": "https://example.com/andorra.jpg"
+    },
+    {
+      "id": 5,
+      "countryName": "Angola",
+      "capital": "Luanda",
+      "population": "33 million",
+      "interestingFact": "Angola is one of Africa's major oil producers.",
+      "image": "https://example.com/angola.jpg"
+    },
+    {
+      "id": 6,
+      "countryName": "Antigua and Barbuda",
+      "capital": "Saint John's",
+      "population": "97,000",
+      "interestingFact": "Antigua and Barbuda is famous for its 365 beaches, one for each day of the year.",
+      "image": "https://example.com/antigua_barbuda.jpg"
+    },
+    {
+      "id": 7,
+      "countryName": "Argentina",
+      "capital": "Buenos Aires",
+      "population": "46 million",
+      "interestingFact": "Argentina is known for tango, football, and its stunning Patagonian landscapes.",
+      "image": "https://example.com/argentina.jpg"
+    },
+    {
+      "id": 8,
+      "countryName": "Armenia",
+      "capital": "Yerevan",
+      "population": "2.8 million",
+      "interestingFact": "Armenia is one of the oldest Christian countries in the world.",
+      "image": "https://example.com/armenia.jpg"
+    },
+    {
+      "id": 9,
+      "countryName": "Australia",
+      "capital": "Canberra",
+      "population": "26 million",
+      "interestingFact": "Australia is the only country that is also a continent.",
+      "image": "https://example.com/australia.jpg"
+    },
+    {
+      "id": 10,
+      "countryName": "Austria",
+      "capital": "Vienna",
+      "population": "8.9 million",
+      "interestingFact": "Austria is known for its classical music heritage and beautiful Alps.",
+      "image": "https://example.com/austria.jpg"
+    },
+    {
+      "id": 11,
+      "countryName": "Azerbaijan",
+      "capital": "Baku",
+      "population": "10 million",
+      "interestingFact": "Azerbaijan is known as the Land of Fire due to its natural gas flames.",
+      "image": "https://example.com/azerbaijan.jpg"
+    },
+    {
+      "id": 12,
+      "countryName": "Bahamas",
+      "capital": "Nassau",
+      "population": "400,000",
+      "interestingFact": "The Bahamas consists of over 700 islands and cays.",
+      "image": "https://example.com/bahamas.jpg"
+    },
+    {
+      "id": 13,
+      "countryName": "Bahrain",
+      "capital": "Manama",
+      "population": "1.7 million",
+      "interestingFact": "Bahrain is known for its pearl diving heritage.",
+      "image": "https://example.com/bahrain.jpg"
+    },
+    {
+      "id": 14,
+      "countryName": "Bangladesh",
+      "capital": "Dhaka",
+      "population": "170 million",
+      "interestingFact": "Bangladesh is one of the most densely populated countries in the world.",
+      "image": "https://example.com/bangladesh.jpg"
+    },
+    {
+      "id": 15,
+      "countryName": "Barbados",
+      "capital": "Bridgetown",
+      "population": "290,000",
+      "interestingFact": "Barbados is known for its beautiful beaches and vibrant culture.",
+      "image": "https://example.com/barbados.jpg"
+    },
+    {
+      "id": 16,
+      "countryName": "Belarus",
+      "capital": "Minsk",
+      "population": "9.3 million",
+      "interestingFact": "Belarus is known for its vast forests and Soviet-era architecture.",
+      "image": "https://example.com/belarus.jpg"
+    },
+    {
+      "id": 17,
+      "countryName": "Belgium",
+      "capital": "Brussels",
+      "population": "11.6 million",
+      "interestingFact": "Belgium is famous for its chocolate, waffles, and EU headquarters.",
+      "image": "https://example.com/belgium.jpg"
+    },
+    {
+      "id": 18,
+      "countryName": "Belize",
+      "capital": "Belmopan",
+      "population": "400,000",
+      "interestingFact": "Belize has the second-largest barrier reef in the world.",
+      "image": "https://example.com/belize.jpg"
+    },
+    {
+      "id": 19,
+      "countryName": "Benin",
+      "capital": "Porto-Novo",
+      "population": "13 million",
+      "interestingFact": "Benin is known as the birthplace of the Vodun (voodoo) religion.",
+      "image": "https://example.com/benin.jpg"
+    },
+    {
+      "id": 20,
+      "countryName": "Bhutan",
+      "capital": "Thimphu",
+      "population": "800,000",
+      "interestingFact": "Bhutan measures success through Gross National Happiness rather than GDP.",
+      "image": "https://example.com/bhutan.jpg"
+    }
+  ]
+  
