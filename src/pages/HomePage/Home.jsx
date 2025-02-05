@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from "react-router-dom";
 import { HeroSection } from '../../layout/UI/HeroSectio';
-// import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Home = () => {
+    const [isActive, setisActive] = useState(false)
+    const handleToggle = () => [
+        setisActive(!isActive)
+    ]
     return (
         <div>
             <header>
@@ -15,7 +19,7 @@ const Home = () => {
                             </NavLink>
                         </div>
 
-                        <nav>
+                        <nav className={isActive?"menu-mobile":"menu-web"}>
                             <ul>
                                 <li>
                                     <NavLink to="/">Home</NavLink>
@@ -32,15 +36,15 @@ const Home = () => {
                             </ul>
                         </nav>
 
-                        {/* <div className="ham-menu">
-                            <button >
+                        <div className="ham-menu">
+                            <button onClick={handleToggle}>
                                 <GiHamburgerMenu />
                             </button>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </header>
-            
+
         </div>
     )
 }
