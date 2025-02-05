@@ -1,7 +1,7 @@
 import React from 'react'
 
-const SearchFilter = ({ search, filter, setFilter, setSearch, countries,
-    setCountries, }) => {
+const SearchFilter = ({ search, filter, setFilter, setSearch, data,
+    setData, }) => {
 
     const handleInputChange = (event) => {
         event.preventDefault()
@@ -13,14 +13,15 @@ const SearchFilter = ({ search, filter, setFilter, setSearch, countries,
         setFilter(event.target.value)
     }
 
-    const sortCountries = (value) => {
-        const sortCountry = [...countries].sort((a, b) => {
-          return value === "asc"
-            ? a.name.common.localeCompare(b.name.common)
-            : b.name.common.localeCompare(a.name.common);
-        });
-        setCountries(sortCountry);
-      };
+
+    const sortCountries = (element) => {
+        const sortCountryData = [...data].sort((a, b) => {
+            return element === "asc"
+                ? a.name.common.localeCompare(b.name.common) : b.name.common.localeCompare(a.name.common)
+        })
+        setData(sortCountryData)
+    }
+
     return (
         <div>
             <section className="section-searchFilter container">
@@ -34,11 +35,17 @@ const SearchFilter = ({ search, filter, setFilter, setSearch, countries,
                 </div>
 
                 <div>
-                    <button onClick={() => sortCountries("asc")}>Asc</button>
+                    <button
+
+                        onClick={() => sortCountries("asc")}
+                    >Asc</button>
                 </div>
 
                 <div>
-                    <button onClick={() => sortCountries("des")}>Desc</button>
+                    <button
+
+                        onClick={() => sortCountries("des")}
+                    >Desc</button>
                 </div>
 
                 <div>

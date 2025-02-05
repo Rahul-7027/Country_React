@@ -10,8 +10,7 @@ const Country = () => {
   const [isPending, startTransition] = useTransition();
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("")
-  const [filter, setFilter] = useState("All")
-  const [countries, setCountries] = useState([]);
+  const [filter, setFilter] = useState("all")
 
   useEffect(() => {
     startTransition(async () => {
@@ -25,25 +24,25 @@ const Country = () => {
     });
   }, []);
 
+  // Search Logic 
+  const searchCountry = (data) => {
+    if (data) { return data.name.common.toLowerCase().includes(search.toLowerCase()) }
+    else { return data }
+  }
+
+  // Filter Logic 
+
+  const filterCountryRegion = (data) => {
+    if (filter === "all") return data;
+    return data.region === filter
+  }
+
+  // Combine for main & Search Logic 
+  const FilterData = data.filter((element) => searchCountry(element) && filterCountryRegion(element))
 
   if (isPending) return (<Loader />)
 
-  const searchCountry = (country) => {
-    if (search) {
-      return country.name.common.toLowerCase().includes(search.toLowerCase());
-    }
-    return country;
-  };
 
-  const filterRegion = (country) => {
-    if (filter === "all") return country;
-    return country.region === filter;
-  };
-
-  // here is the main logic
-  const filterCountries = countries.filter(
-    (country) => searchCountry(country) && filterRegion(country)
-  );
   console.log(2222, search, filter)
   return (
     <div>
@@ -54,11 +53,11 @@ const Country = () => {
           setSearch={setSearch}
           filter={filter}
           setFilter={setFilter}
-          countries={countries}
-          setCountries={setCountries}
+          data={data}
+          setData={setData}
         />
         <ul className='grid grid-four-cols'>
-          {filterCountries.filter((element, index) => {
+          {FilterData.map((element, index) => {
             return <CountryCard country={element} key={index} />
           })}
         </ul>

@@ -1,7 +1,7 @@
 import React, { useTransition, useState, useEffect } from 'react';
 import { NavLink, useParams } from 'react-router-dom';
 import Loader from '../layout/UI/Loader';
-import { getCountryData, getCountryDataIndia } from '../api/GetApi';
+import { getCountryDataIndia } from '../api/GetApi';
 
 const CountryDetails = () => {
   const params = useParams();
@@ -16,8 +16,6 @@ const CountryDetails = () => {
       if (res.status === 200) {
         setData(res.data[0]);
       }
-
-      console.log(1111111111,Object.keys(res.data[0].name.nativeName));
     });
   }, []);
 
